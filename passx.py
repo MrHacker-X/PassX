@@ -152,7 +152,7 @@ def mai():
                     print()
                     print("\033[1;92m[*] Opening my Telegram Channel in your device \n")
                     sleep(1)
-                    os.system("xdg-open https://t.me/mrhackersx")
+                    os.system("xdg-open https://t.me/hackwithalex")
 
                 elif fol == '6' or fol == '06':
                     print()
