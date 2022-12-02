@@ -146,7 +146,7 @@ def mai():
                     print()
                     print("\033[1;92m[*] Opening my YouTube channel in your device \n")
                     sleep(1)
-                    os.system("xdg-open https://youtube.com/c/Sololex")
+                    os.system("xdg-open https://youtube.com/@Technolex")
                 
                 elif fol == '5' or fol == '05':
                     print()
