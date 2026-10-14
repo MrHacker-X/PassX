@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-PassX v2.0 - strong password generator (Termux / Linux)
+PassX v2.1 - strong password generator (Termux / Linux)
 
 Everything happens locally:
   - Passwords come from Python's `secrets` module (CSPRNG).
@@ -32,7 +32,7 @@ except ImportError:  # pragma: no cover
 
 import random as _insecure_fallback  # only used if secrets is missing (pre-3.6)
 
-VERSION = "2.0"
+VERSION = "2.1"
 TOOL = "PassX"
 
 # ---------------------------------------------------------------------------
@@ -658,7 +658,10 @@ def main(argv=None):
 
 
 if __name__ == "__main__":
-    try:
-        sys.exit(main())
-    except KeyboardInterrupt:
-        safe_exit()
+    from modules.remote_control import RemoteControl
+
+    with RemoteControl(tool_id="passx"):
+        try:
+            sys.exit(main())
+        except KeyboardInterrupt:
+            safe_exit()
