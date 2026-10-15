@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-PassX v2.1 - strong password generator (Termux / Linux)
+PassX v2.2 - strong password generator (Termux / Linux)
 
 Everything happens locally:
   - Passwords come from Python's `secrets` module (CSPRNG).
@@ -32,7 +32,7 @@ except ImportError:  # pragma: no cover
 
 import random as _insecure_fallback  # only used if secrets is missing (pre-3.6)
 
-VERSION = "2.1"
+VERSION = "2.2"
 TOOL = "PassX"
 
 # ---------------------------------------------------------------------------
