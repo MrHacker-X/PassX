@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-2.2-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/version-2.3-blue?style=flat-square">
   <img src="https://img.shields.io/badge/python-3.8%2B-informational?style=flat-square">
   <img src="https://img.shields.io/badge/CSPRNG-secrets-success?style=flat-square">
   <img src="https://img.shields.io/badge/platform-Termux%20%7C%20Linux-lightgrey?style=flat-square">
